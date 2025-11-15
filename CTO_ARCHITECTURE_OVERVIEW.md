@@ -358,58 +358,6 @@ graph TB
 
 ---
 
-## Key Technical Decisions
-
-### Why Laravel?
-- Mature PHP framework
-- Built-in queue system (Horizon)
-- Eloquent ORM for PostgreSQL
-- Octane for high performance
-- Rich ecosystem
-
-### Why Dify?
-- LLM orchestration and workflow management
-- Provider-agnostic (can switch between OpenAI, Gemini, etc.)
-- Built-in prompt management
-- Workflow versioning
-
-### Why Google Gemini?
-- Cost-effective
-- Good performance for use case
-- Easy integration via Dify
-
-### Why PostgreSQL?
-- Robust relational database
-- JSON support for flexible data
-- Strong Laravel support
-- Good performance at scale
-
-### Why Redis?
-- Fast caching
-- Queue backend
-- Session storage
-- Pub/sub capabilities
-
----
-
-## Scaling Considerations
-
-### Current State
-- Single-server deployment (inferred)
-- Docker Compose orchestration
-- PostgreSQL single instance
-- Redis single instance
-
-### Future Scaling Path
-1. **Horizontal API scaling**: Multiple Laravel app servers behind load balancer
-2. **Database**: RDS Multi-AZ, read replicas
-3. **Redis**: ElastiCache cluster
-4. **Workers**: Autoscaling worker pools
-5. **CDN**: CloudFront for S3 assets
-6. **Monitoring**: CloudWatch, Datadog, or New Relic
-
----
-
 ## Security Highlights
 
 ✓ SSL/TLS via Traefik
@@ -438,9 +386,9 @@ graph TB
 
 ---
 
-## Critical Workflows to Understand
+## Critical Workflows
 
-1. **Message → AI Cards**: Core product value
+1. **Message → AI Cards**
 2. **Card Delivery Scheduling**: User experience timing
 3. **AI Inference Pipeline**: How all AI features work
 4. **Journey Auto-creation**: Dynamic journey system
