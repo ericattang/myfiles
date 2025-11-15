@@ -446,19 +446,6 @@ graph TB
 4. **Journey Auto-creation**: Dynamic journey system
 5. **Payment Verification**: Revenue flow
 
----
 
-## Questions for Initial Review
-
-1. **Scaling**: What's the current traffic? Growth projections?
-2. **Monitoring**: What monitoring beyond Telescope/Horizon?
-3. **Costs**: AWS costs? Gemini API costs?
-4. **Performance**: Response times? Queue processing times?
-5. **Errors**: Error rates? Failed job rates?
-6. **Team**: Who maintains backend? DevOps?
-7. **Deployment**: How is deployment done? CI/CD?
-8. **Testing**: Test coverage? E2E tests?
-9. **Documentation**: API docs? Runbooks?
-10. **Roadmap**: Next 6 months technical priorities?
 
 *Last updated: November 2025*
