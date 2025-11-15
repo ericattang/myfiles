@@ -1,5 +1,4 @@
-# Glia HQ - High-Level Architecture Overview
-## For CTO Onboarding
+# Glia HQ - Architecture Overview
 
 ---
 
